@@ -1,0 +1,934 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Druk";
+    src: url("/src/Components/fonts/Druk-Wide-Cy-Web-Medium-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+    font-family: "dinpro";
+    src: url("/src/Components/fonts/DINPro.ttf")
+    format("truetype");
+}
+
+.cointainer__news{
+    width: 1280px;
+    height: 804px;
+    flex-shrink: 0;
+    background: #FFF2DC;
+}
+
+.text1{
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    font-family: sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 79px;
+
+}
+
+.text1__spam{
+    color: #7645EF;
+}
+
+.cointainer__item{
+    display: flex;
+    padding-top: 60px;
+}
+
+.all{
+    width: 134px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #000;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    margin-left: 555px;
+}
+
+.About{
+    width: 689px;
+    font-family: sans-serif;
+    margin-left: 79px;
+    margin-top: 15px;
+}
+
+
+.book{
+    width: 247.701px;
+    height: 213.703px;
+    transform: rotate(-9.103deg);
+    flex-shrink: 0;
+    margin-top: -50px;
+}
+
+.col-3{
+    padding: 0;
+}
+
+.s{
+    width: 250px;
+    color: rgba(0, 0, 0, 0.35);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* t2/Regular */
+    font-family: DINPro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+
+.pp{
+    margin-top: 15px;
+    font-family: Arial;
+}
+
+.card__shop{
+    gap: 42px;
+    margin-left: 80px;
+    margin-top: -66px;
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+}
+
+.a__all{
+    color: #FFF;
+}
+
+.Registration{
+    width: 540px;
+    height: 360px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #C1A9FF;
+
+}
+
+.register__page{
+    margin-left: 80px;
+    margin-top: 60px;
+}
+
+.podpis{
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-family: 'Druk';
+    padding: 30px 0 0 30px;
+}
+
+.aboutt{
+    color: white;
+    width: 290px;
+    padding: 15px 0 0 30px;
+    height: 72px;
+
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 24px;
+}
+
+.Mail{
+    margin-top: -110px;
+    margin-left: 75px;
+    flex-shrink: 0;
+}
+
+.input{
+    display: flex;
+    width: 314px;
+    height: 50px;
+    padding: 11px 25px 14px 25px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #FFF;
+    border: 0;
+    margin-left: 30px;
+}
+
+.subs{
+    display: inline-flex;
+    height: 50px;
+    padding: 11px 25px 14px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background:  #000;
+    color: white;
+    font-family: sans-serif;
+    margin-left: 10px;
+    border: 0;
+}
+
+.politic{
+    color: black;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+
+
+
+.Telegram{
+    width: 250px;
+    height: 360px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #1C93F5;
+}
+
+.ava{
+    padding-top: 15px;
+    padding-left: 52px;
+}
+
+.news{
+    width: 210px;
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    margin-left: 20px;
+    margin-top: 4px;
+}
+
+.subss{
+    color: rgba(255, 255, 255, 0.50);
+
+
+
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+
+.Button__shop{
+    display: flex;
+    width: 190px;
+    height: 50px;
+    padding: 11px 25px 14px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    border-radius: 100px;
+    border: 1px solid  rgba(255, 255, 255, 0.30);
+    color: white;
+    background: #1C93F5;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.register__page{
+    gap: 40px;
+}
+
+.Zen{
+    width: 250px;
+    height: 360px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #2C2F32;
+}
+
+.ava__zen{
+    margin-left: 55px;
+    margin-top: 20px;
+    display: flex;
+    width: 140px;
+    height: 140px;
+    padding: 23.333px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.newss{
+    color: white;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 118.182% */
+    width: 209px;
+    margin-left: 21px;
+    margin-top: 18px
+}
+
+.Button__shopp{
+    display: flex;
+    width: 190px;
+    height: 50px;
+    padding: 11px 25px 14px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    border-radius: 100px;
+    border: 1px solid  rgba(255, 255, 255, 0.30);
+    color: white;
+    background: #2C2F32;
+    margin-left: 30px;
+    margin-top: 24px;
+}
+
+.atlas{
+    color: #C0A9FF;
+}
+
+.why{
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 136.364% */
+    font-family: 'dinpro';
+    margin-left: 109px;
+    margin-top: 74px;
+}
+
+.whyy{
+    color: #7645EF;
+}
+
+.hr{
+    margin-top: 77px;
+    margin-left: 80px;
+}
+
+.hrrr{
+    width: 541px;
+    height: 4px;
+    background: black;
+    flex-shrink: 0;
+    stroke-width: 2px;
+    stroke: #000;
+    opacity: 0.2;
+    margin-right: 38px;
+}
+
+.hrw{
+    margin-top: -98px;
+    position: absolute;
+    margin-left: 910px;
+}
+
+footer{
+    height: 808px;
+}
+
+.card__footer{
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.info{
+    width: 347px;
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* t1/Regular */
+    font-family: DINPro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.ddd{
+    display: flex;
+}
+
+.telegram__icon{
+    margin-left: 18px;
+    width: 189px;
+}
+
+.icons__footer{
+    margin-right: 13px;
+}
+
+.icons__footerr{
+    margin: 0;
+}
+
+.info__shop{
+    margin-top: 40px;
+    color: black;
+    width: 443px;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    font-family: DINPro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+
+}
+
+.info__shopp{
+    color: rgba(0, 0, 0, 0.30);
+}
+
+.footer__infoo{
+    color: rgba(0, 0, 0, 0.30);
+    margin-top: 29px;
+    width: 381px;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+
+    font-family: DINPro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer__2{
+    margin-left: -55px;
+}
+
+
+
+.teext{
+    color:#000;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    margin-bottom: 10px;
+    font-family: DINPro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+    width: 249px;
+}
+
+.teext1{
+    color:#000;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    font-family: DINPro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+    width: 249px;
+    margin: 0;
+}
+
+.text2{
+    margin-left: 41px;
+}
+
+.book2{
+    display: none;
+}
+
+.teexxt{
+    width: 250px;
+    margin-bottom: 10px;
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* t1/Regular */
+    font-family: DINPro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.teexxt1{
+    width: 250px;
+    margin: 0;
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* t1/Regular */
+    font-family: DINPro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.over{
+
+    margin-left: 660px;
+    margin-top: -95px;
+    color: rgba(0, 0, 0, 0.30);
+    font-feature-settings: 'clig' off, 'liga' off;
+    width: 540px;
+
+
+    font-family: DINPro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+.d-flexx{
+    display: flex;
+}
+
+.all__button{
+    display: none;
+}
+
+.avaa{
+    display: none;
+}
+
+.ava__zenn{
+    display: none;
+}
+
+
+
+@media (max-width: 576px) {
+
+    /*__________________Footer__respancive_________________*/
+
+    .cointainer__news{
+        width: 576px;
+        height: 2722px;
+    }
+
+    .book{
+        display: none;
+    }
+
+    .book2{
+        display: block;
+        position: absolute;
+        margin: 0;
+        margin-top: -260px;
+        margin-left: 426px;
+    }
+
+    .text1{
+        padding: 0;
+        padding-left: 140px;
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+
+        font-family: DINPro;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    .text1__spam{
+        margin-right: 4px;
+        color: #7645EF;
+        font-feature-settings: 'clig' off, 'liga' off;
+
+        font-family: DINPro;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    .cointainer__item{
+        padding-top: 99px;
+    }
+
+    .About{
+        text-align: center;
+        margin-left: 0;
+        margin-top: 10px;
+        width: 576px;
+
+
+        /* t2/Regular */
+        font-family: DINPro;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .all{
+        display: none;
+    }
+
+    .d-flex{
+        margin: 0;
+        width: 100%;
+    }
+
+    .ddd{
+        display: block;
+    }
+
+    .d-flexx{
+        display: block;
+    }
+
+    .card__shop{
+        margin-top: 49px;
+        margin-left: 50px;
+    }
+
+    .s{
+        margin-bottom: 40px;
+        margin-left: 62px;
+    }
+
+
+    .all__button{
+        border: 0;
+        display:block ;
+        width: 345px;
+        height: 50px;
+        padding: 6px 15px 9px 15px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 100px;
+        background: #000;
+        color: white;
+        margin-left: 60px;
+    }
+
+    .pp{
+        width: 345px;
+    }
+
+    .register__page{
+        margin-left: 20px;
+    }
+
+
+
+    .Mail{
+        margin-left: 3px;
+        margin-top: -83px;
+        width: 118.051px;
+        flex-shrink: 0;
+    }
+
+    .aboutt{
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+
+        width: 100%;
+        font-family: DINPro;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 20px; /* 125% */
+    }
+
+    .input{
+        display: flex;
+        width: 380px;
+        height: 50px;
+        padding: 0px 25px;
+        align-items: center;
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+
+    .subs{
+        display: flex;
+        width: 380px;
+        height: 50px;
+        padding: 6px 15px 9px 15px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    .politic{
+        color:rgba(0, 0, 0, 0.30);
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: DINPro;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px; /* 116.667% */
+        margin-left: 110px;
+        width: 300px;
+    }
+
+    .Telegram{
+        margin-top: 20px;
+        width: 540px;
+        height: 212px;
+        flex-shrink: 0;
+    }
+
+    .ava{
+        display: none;
+    }
+
+    .avaa{
+        position: absolute;
+        display: block;
+        margin-left: 449px;
+    }
+
+    .footer__2{
+        margin-left: -150px;
+    }
+
+    .news{
+        width: 400px;
+        margin: 0;
+        padding-left: 20px;
+        padding-top: 20px;
+        color: #FFF;
+        text-align: left;
+        font-feature-settings: 'clig' off, 'liga' off;
+
+
+        font-family: DINPro;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .subss{
+        margin-left: 20px;
+    }
+
+    .Button__shop{
+        width: 380px;
+        margin-top: 20px;
+        margin-left: 20px;
+        display: flex;
+        height: 50px;
+        padding: 6px 15px 9px 15px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+    }
+
+    .Zen{
+        width: 540px;
+        height: 192px;
+        flex-shrink: 0;
+        margin-top: 20px;
+    }
+
+    .ava__zen{
+        display: none;
+    }
+
+    .ava__zenn{
+        position: absolute;
+        display: block;
+        margin-left: 461px;
+        margin-top: 18px;
+    }
+
+    .newss{
+        padding-left: 20px;
+        padding-top: 20px;
+        margin: 0;
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+
+        /* t1/Medium */
+        font-family: DINPro;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+        width: 188px;
+    }
+
+    .Button__shopp{
+        display: flex;
+        width: 380px;
+        height: 50px;
+        padding: 6px 15px 9px 15px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .why{
+        width: 280px;
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        margin-left: 40px;
+        margin-top: 40px;
+
+        /* t1/Medium */
+        font-family: DINPro;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 133.333% */
+    }
+
+    hr{
+        display: none;
+    }
+
+    .hrw{
+        margin-left: 110px;
+    }
+
+    .card__footer{
+        width: 340px;
+    }
+
+    .footer__1{
+
+    }
+
+    .card__footer{
+        margin-left: 130px;
+        text-align: center;
+        margin-top: 120px;
+    }
+
+    .info{
+        font-feature-settings: 'clig' off, 'liga' off;
+
+        /* t2 lineheight/Regular */
+        font-family: DINPro;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 156.25% */
+        width: 320px;
+    }
+
+    .telegram__icon{
+        margin-left: 70px;
+        margin-top: 40px;
+    }
+    .info__shop{
+        width: 320px;
+    }
+
+    .footer__infoo{
+        width: 320px;
+        position: absolute;
+        margin-top: 774px;
+    }
+
+    .text1{
+        margin-top: 57px;
+        margin-left: 41px;
+    }
+
+    .text2{
+        margin-left: 180px;
+        margin-top: 50px;
+    }
+
+    .over{
+        position: absolute;
+        margin: 0;
+        width: 320px;
+        margin-left: 130px;
+        text-align: center;
+        margin-top: 57px;
+    }
+
+    footer{
+        height: 1250px;
+    }
+
+}
+
+@media (max-width: 567px) {
+    .cointainer__news {
+        width: 567px;
+    }
+
+    .ss{
+        width: 345px;
+    }
+
+    .book {
+        display: none;
+    }
+
+    .book2 {
+        display: block;
+        position: absolute;
+        margin-top: -340px;
+    }
+
+    /* ... (other responsive adjustments) ... */
+
+    .text1 {
+        margin-top: 45px; /* Adjusted value */
+        margin-left: 20px;
+    }
+
+    .text2 {
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    .over {
+        position: absolute;
+        margin: 0;
+        width: 320px;
+        margin-left: 20px;
+        margin-top: 45px; /* Adjusted value */
+    }
+
+    footer {
+        height: auto; /* Adjusted value */
+    }
+}

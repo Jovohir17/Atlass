@@ -1,0 +1,1047 @@
+$font-family: 'Ubuntu', sans-serif;
+
+@font-face {
+    font-family: "DINPro-Black";
+    src: url("../fonts/DINPro-Black.ttf")
+    format("truetype");
+}
+@font-face {
+    font-family: "DINPro-Bold";
+    src: url("../fonts/DINPro-Bold.ttf")
+    format("truetype");
+}
+@font-face {
+    font-family: "DINPro-Italic";
+    src: url("../fonts/DINPro-Italic.ttf")
+    format("truetype");
+}
+@font-face {
+    font-family: "DINPro-Light";
+    src: url("../fonts/DINPro-Light.ttf")
+    format("truetype");
+}
+@font-face {
+    font-family: "DINPro-LightItalic";
+    src: url("../fonts/DINPro-LightItalic.ttf")
+    format("truetype");
+}
+@font-face {
+    font-family: "DINPro-Medium";
+    src: url("../fonts/DINPro-Medium.ttf")
+    format("truetype");
+}
+@font-face {
+    font-family: "DINPro-MediumItalic";
+    src: url("../fonts/DINPro-MediumItalic.ttf")
+    format("truetype");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none !important;
+    outline: none !important;
+    border: none;
+}
+$width: 1440px;   
+// ex: width:$width;
+
+// @mixin  >  @include (name;)
+// $mixedcolor: ;
+
+// >
+// linear-gradient (to ... red , green , blue);
+
+// &:hover  (bitta tepa kodga tasir qiladi)
+@mixin flexbox{
+    display: flex;
+
+}
+@mixin text{
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth !important;
+    body{
+        max-width: 1280px;
+        article{
+            background: var(--colors-grey-medium, #F5F5F5);
+            .container{
+                padding-block: 60px;
+                margin-inline: 79px;
+                padding-inline: 0;
+                @media (min-width: 361px) and (max-width: 576px){
+                    margin: 0;
+                }
+                @media (min-width: 0px) and (max-width: 360px){
+                    padding-block: 40px;
+                    margin-inline: 0;
+                }
+                // @media screen (max-width: 576px){
+                    
+                // }
+                .row{
+                    @media (min-width: 0px) and (max-width: 360px){
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        // overflow-x: scroll;
+                        overflow-x: hidden;
+                    }
+                    h3{
+                        @media (min-width: 361px) and (max-width: 576px){
+                         margin-left: 20px;       
+                        }
+                        @media (min-width: 0px) and (max-width: 360px){
+                            margin-left: 20px;
+                            margin-right: 28px;
+                            padding-inline: 0;
+                            color: #000;
+                            font-feature-settings: 'clig' off, 'liga' off;
+                            
+                            /* H4/Medium */
+                            font-family: DINPro;
+                            font-size: 25px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 30px; /* 120% */     
+                            width: 312px;                       
+                        }
+                        @media (min-width: 361px) and (max-width: 576px){
+                                font-size: 28px;
+                                width: 400px;
+                        }
+                        // @media screen (max-width: 576px){
+                            
+                        // }
+                        color: var(--colors-black-base, #000);
+                        font-feature-settings: 'clig' off, 'liga' off;
+                        
+                        /* H3/Medium */
+                        font-family: DINPro;
+                        font-size: 35px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 40px; /* 114.286% */
+                        padding-bottom: 22px;
+                        span{
+                            a{
+                                @media (min-width: 0px) and (max-width: 360px){
+                                    color: var(--colors-purple-app, #7645EF);
+                                    font-feature-settings: 'clig' off, 'liga' off;
+                                    
+                                    /* H4/Medium */
+                                    font-family: DINPro;
+                                    font-size: 25px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 30px;                                    
+                                }
+                                color: var(--colors-purple-app, #7645EF);
+                                font-feature-settings: 'clig' off, 'liga' off;
+                                
+                                /* H3/Medium */
+                                font-family: DINPro;
+                                font-size: 35px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 40px;                                
+                            }
+                        }                        
+                    }
+                    .scrollll{
+                        display: flex;
+                        @media (min-width: 0px) and (max-width: 360px){
+                            overflow-x: scroll;
+                        }
+                        @media (min-width: 361px) and (max-width: 576px){
+                            width: 576px;
+                            overflow-x: scroll;
+                            gap: 140px;
+                        }
+                    }
+                    .col-3{
+                        display: flex;
+                        padding-inline: 20px;
+                        @media (min-width: 361px) and (max-width: 576px){
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        @media (min-width: 0px) and (max-width: 360px){
+                            display: flex;
+                            flex-direction: column;
+                            // overflow-x: scroll;
+                            // height: 200px;
+                            
+                        }
+                        .card{
+                            border: none;
+                            background-image: url(../images/drags.png);
+                            background-repeat: no-repeat;
+                            border-radius: 20px;
+                            @media (min-width: 361px) and (max-width: 576px){
+                                width: 250px;
+                                height: 360px;
+                            }
+                            @media (min-width: 0px) and (max-width: 360px){
+                            // overflow-x: scroll;
+
+                                #cardik{
+
+                                    &:hover .bottom h5 {
+                                        margin-bottom: 72px;
+                                        transition: 700ms;
+                                    }
+                                    &:hover .bottom button{
+                                        border-radius: 1000px;
+                                        background: var(--colors-purple-app, #7645EF);
+                                        
+                                        /* ! */
+                                        box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05); 
+                                        transition: 400ms;                                           
+                                    }
+                                    &:hover .bottom button a{
+                                        color: var(--colors-white-base, #FFF);
+                                        font-feature-settings: 'clig' off, 'liga' off;
+                                        font-family: DINPro;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 20px; /* 111.111% */  
+                                        transition: 400ms;                                          
+                                    }
+                                }
+                                width: 250px;
+                                height: 360px;
+                            }
+                            .card-body{
+                                @media (min-width: 361px) and (max-width: 576px){
+                                }
+                                // @media (min-width: 0px) and (max-width: 360px){
+                                    
+                                // }
+                                width: 250px;
+                                height: 360px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                &:hover .bottom h5 {
+                                    margin-bottom: 72px;
+                                    transition: 700ms;
+                                }
+                                &:hover .bottom button{
+                                    border-radius: 1000px;
+                                    background: var(--colors-purple-app, #7645EF);
+                                    
+                                    /* ! */
+                                    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05); 
+                                    transition: 400ms;                                           
+                                }
+                                &:hover .bottom button a{
+                                    color: var(--colors-white-base, #FFF);
+                                    font-feature-settings: 'clig' off, 'liga' off;
+                                    font-family: DINPro;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 20px; /* 111.111% */  
+                                    transition: 400ms;                                          
+                                }
+                                .top{
+                                    h4{
+                                        color: #FFF;
+                                        text-align: center;
+                                        font-family: Ubuntu;
+                                        font-size: 22px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 17px; /* 100% */
+                                        letter-spacing: 1.17px;  
+                                        line-height: 22px;
+                                    }
+                                }
+                                .bottom{
+                                    .cost{
+                                            display: flex;
+                                        p{
+                                            display: flex;
+                                            color: var(--colors-white-30, rgba(255, 255, 255, 0.30));
+                                            font-feature-settings: 'clig' off, 'liga' off;
+                                            font-family: DINPro;
+                                            font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            line-height: 20px; /* 125% */
+                                            text-decoration: line-through !important; 
+                                            margin-bottom: 0;                                               
+                                                }
+                                                h6{
+
+                                                border-radius: 4px;
+                                                background: var(--colors-pink-base, #E961A0);
+                                                color: var(--colors-white-base, #FFF);
+                                                font-feature-settings: 'clig' off, 'liga' off;
+                                                font-family: DINPro;
+                                                font-size: 12px;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                line-height: 16px; /* 133.333% */
+                                                padding: 2.1px 4px;                            
+                                                text-decoration: none !important;                                                    
+                                                margin-left: 8px;
+                                                height: 18px;
+                                                margin-bottom: 0;                                               
+                                                    
+
+                                                }
+                                    }
+                                    h5{
+                                        color: var(--colors-white-base, #FFF);
+                                        font-feature-settings: 'clig' off, 'liga' off;
+                                        /* H4/Bold */
+                                        font-family: DINPro;
+                                        font-size: 25px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 30px; /* 120% */    
+                                        margin-bottom: 20px;
+                                    }
+                                    button{
+                                        border-radius: 1000px;
+                                        background: var(--colors-white-base, #FFF);
+                                        
+                                        /* ! */
+                                        box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05);
+                                        padding: 14px 30px 16px 30px;
+                                        border: none;
+                                        width: 100%;
+                                       
+                                        a{
+                                            color: var(--colors-black-base, #000);
+                                            font-feature-settings: 'clig' off, 'liga' off;
+                                            font-family: DINPro;
+                                            font-size: 18px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: 20px; /* 111.111% */ 
+                                                                                       
+                                        }                                        
+                                    }
+                                }
+                            }
+                        }
+                        .card__1{
+                            border: none;
+                            background-image: url(../images/seriy.png);
+                            background-repeat: no-repeat;
+                            border-radius: 20px;
+                            // border-top-right-radius: 25px;
+                            // border-bottom-right-radius: 25px;
+                            @media (min-width: 0px) and (max-width: 360px){
+                                margin-left: 180px;
+                                &:hover .bottom h5 {
+                                    margin-bottom: 72px;
+                                    transition: 700ms;
+                                }
+                                &:hover .bottom button{
+                                    border-radius: 1000px;
+                                    background: var(--colors-purple-app, #7645EF);
+                                    
+                                    /* ! */
+                                    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05); 
+                                    transition: 400ms;                                           
+                                }
+                                &:hover .bottom button a{
+                                    color: var(--colors-white-base, #FFF);
+                                    font-feature-settings: 'clig' off, 'liga' off;
+                                    font-family: DINPro;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 20px; /* 111.111% */  
+                                    transition: 400ms;                                          
+                                }
+                            }
+                            .card-body{
+                                width: 250px;
+                                height: 360px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                &:hover .bottom h5 {
+                                    margin-bottom: 72px;
+                                    transition: 700ms;
+                                }
+                                &:hover .bottom button{
+                                    border-radius: 1000px;
+                                    background: var(--colors-purple-app, #7645EF);
+                                    
+                                    /* ! */
+                                    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05); 
+                                    transition: 400ms;                                           
+                                }
+                                &:hover .bottom button a{
+                                    color: var(--colors-white-base, #FFF);
+                                    font-feature-settings: 'clig' off, 'liga' off;
+                                    font-family: DINPro;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 20px; /* 111.111% */  
+                                    transition: 400ms;                                          
+                                }
+                                .top{
+                                    h4{
+                                        color: #EAFC7A;
+                                        text-align: center;
+                                        font-family: Ubuntu;
+                                        font-size: 22px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 17px; /* 100% */
+                                        letter-spacing: 0.17px;  
+                                        line-height: 20px;
+                                    }
+                                }
+                                .bottom{
+                                    .cost{
+                                            display: flex;
+                                        p{
+                                            display: flex;
+                                            color: var(--colors-white-30, rgba(255, 255, 255, 0.30));
+                                            font-feature-settings: 'clig' off, 'liga' off;
+                                            font-family: DINPro;
+                                            font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            line-height: 20px; /* 125% */
+                                            text-decoration: line-through !important; 
+                                            margin-bottom: 0;                                               
+                                                }
+                                                h6{
+
+                                                border-radius: 4px;
+                                                background: var(--colors-pink-base, #E961A0);
+                                                color: var(--colors-white-base, #FFF);
+                                                font-feature-settings: 'clig' off, 'liga' off;
+                                                font-family: DINPro;
+                                                font-size: 12px;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                line-height: 16px; /* 133.333% */
+                                                padding: 2.1px 4px;                            
+                                                text-decoration: none !important;                                                    
+                                                margin-left: 8px;
+                                                height: 18px;
+                                                margin-bottom: 0;                                               
+                                                    
+
+                                                }
+                                    }
+                                    h5{
+                                        color: var(--colors-white-base, #FFF);
+                                        font-feature-settings: 'clig' off, 'liga' off;
+                                        /* H4/Bold */
+                                        font-family: DINPro;
+                                        font-size: 25px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 30px; /* 120% */    
+                                        margin-bottom: 20px;
+                                    }
+                                    button{
+                                        border-radius: 1000px;
+                                        background: var(--colors-white-base, #FFF);
+                                        
+                                        /* ! */
+                                        box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05);
+                                        padding: 14px 30px 16px 30px;
+                                        border: none;
+                                        width: 100%;
+                                       
+                                        a{
+                                            color: var(--colors-black-base, #000);
+                                            font-feature-settings: 'clig' off, 'liga' off;
+                                            font-family: DINPro;
+                                            font-size: 18px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: 20px; /* 111.111% */ 
+                                                                                       
+                                        }                                        
+                                    }
+                                }
+                            }                            
+                        }
+                        .card__2{
+                            border: none;
+                            background-image: url(../images/black.png);
+                            background-repeat: no-repeat;
+                            border-radius: 20px;
+                            // border-top-right-radius: 25px;
+                            // border-bottom-right-radius: 25px;
+                            @media (min-width: 0px) and (max-width: 360px){
+                                margin-left: 360px;
+                                &:hover .bottom h5 {
+                                    margin-bottom: 72px;
+                                    transition: 700ms;
+                                }
+                                &:hover .bottom button{
+                                    border-radius: 1000px;
+                                    background: var(--colors-purple-app, #7645EF);
+                                    
+                                    /* ! */
+                                    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05); 
+                                    transition: 400ms;                                           
+                                }
+                                &:hover .bottom button a{
+                                    color: var(--colors-white-base, #FFF);
+                                    font-feature-settings: 'clig' off, 'liga' off;
+                                    font-family: DINPro;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 20px; /* 111.111% */  
+                                    transition: 400ms;                                          
+                                }
+                            }
+                            .card-body{
+                                width: 250px;
+                                height: 360px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                &:hover .bottom h5 {
+                                    margin-bottom: 72px;
+                                    transition: 700ms;
+                                }
+                                &:hover .bottom button{
+                                    border-radius: 1000px;
+                                    background: var(--colors-purple-app, #7645EF);
+                                    
+                                    /* ! */
+                                    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05); 
+                                    transition: 400ms;                                           
+                                }
+                                &:hover .bottom button a{
+                                    color: var(--colors-white-base, #FFF);
+                                    font-feature-settings: 'clig' off, 'liga' off;
+                                    font-family: DINPro;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 20px; /* 111.111% */  
+                                    transition: 400ms;                                          
+                                }
+                                .top{
+                                    h4{
+                                        color: #FFF;
+                                        text-align: center;
+                                        font-family: Ubuntu;
+                                        font-size: 22px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 17px; /* 100% */
+                                        letter-spacing: 1.17px;  
+                                        line-height: 22px;
+                                    }
+                                }
+                                .bottom{
+                                    .cost{
+                                            display: flex;
+                                        p{
+                                            display: flex;
+                                            color: var(--colors-white-30, rgba(255, 255, 255, 0.30));
+                                            font-feature-settings: 'clig' off, 'liga' off;
+                                            font-family: DINPro;
+                                            font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            line-height: 20px; /* 125% */
+                                            text-decoration: line-through !important; 
+                                            margin-bottom: 0;                                               
+                                                }
+                                                h6{
+
+                                                border-radius: 4px;
+                                                background: var(--colors-pink-base, #E961A0);
+                                                color: var(--colors-white-base, #FFF);
+                                                font-feature-settings: 'clig' off, 'liga' off;
+                                                font-family: DINPro;
+                                                font-size: 12px;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                line-height: 16px; /* 133.333% */
+                                                padding: 2.1px 4px;                            
+                                                text-decoration: none !important;                                                    
+                                                margin-left: 8px;
+                                                height: 18px;
+                                                margin-bottom: 0;                                               
+                                                    
+
+                                                }
+                                    }
+                                    h5{
+                                        color: var(--colors-white-base, #FFF);
+                                        font-feature-settings: 'clig' off, 'liga' off;
+                                        /* H4/Bold */
+                                        font-family: DINPro;
+                                        font-size: 25px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 30px; /* 120% */    
+                                        margin-bottom: 20px;
+                                    }
+                                    button{
+                                        border-radius: 1000px;
+                                        background: var(--colors-white-base, #FFF);
+                                        
+                                        /* ! */
+                                        box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05);
+                                        padding: 14px 30px 16px 30px;
+                                        border: none;
+                                        width: 100%;
+                                       
+                                        a{
+                                            color: var(--colors-black-base, #000);
+                                            font-feature-settings: 'clig' off, 'liga' off;
+                                            font-family: DINPro;
+                                            font-size: 18px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: 20px; /* 111.111% */ 
+                                                                                       
+                                        }                                        
+                                    }
+                                }
+                            }                            
+                        }
+                        .card__3{
+                            border: none;
+                            background-image: url(../images/dnk.png);
+                            background-repeat: no-repeat;
+                            border-radius: 20px;
+                            // border-top-right-radius: 25px;
+                            // border-bottom-right-radius: 25px;
+                            @media (min-width: 0px) and (max-width: 360px){
+                                margin-left: 540px;
+                                &:hover .bottom h5 {
+                                    margin-bottom: 72px;
+                                    transition: 700ms;
+                                }
+                                &:hover .bottom button{
+                                    border-radius: 1000px;
+                                    background: var(--colors-purple-app, #7645EF);
+                                    
+                                    /* ! */
+                                    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05); 
+                                    transition: 400ms;                                           
+                                }
+                                &:hover .bottom button a{
+                                    color: var(--colors-white-base, #FFF);
+                                    font-feature-settings: 'clig' off, 'liga' off;
+                                    font-family: DINPro;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 20px; /* 111.111% */  
+                                    transition: 400ms;                                          
+                                }
+                            }
+                            .card-body{
+                                width: 250px;
+                                height: 360px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                &:hover .bottom h5 {
+                                    margin-bottom: 72px;
+                                    transition: 700ms;
+                                }
+                                &:hover .bottom button{
+                                    border-radius: 1000px;
+                                    background: var(--colors-purple-app, #7645EF);
+                                    
+                                    /* ! */
+                                    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05); 
+                                    transition: 400ms;                                           
+                                }
+                                &:hover .bottom button a{
+                                    color: var(--colors-white-base, #FFF);
+                                    font-feature-settings: 'clig' off, 'liga' off;
+                                    font-family: DINPro;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 20px; /* 111.111% */  
+                                    transition: 400ms;                                          
+                                }
+                                .top{
+                                    h4{
+                                        color: #FFF;
+                                        text-align: center;
+                                        font-family: Ubuntu;
+                                        font-size: 22px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 17px; /* 100% */
+                                        // letter-spacing: 0.17px;  
+                                        line-height: 22px;
+                                        width: 209px;
+                                        text-transform: lowercase;
+                                    }
+                                }
+                                .bottom{
+                                    .cost{
+                                            display: flex;
+                                        p{
+                                            display: flex;
+                                            color: var(--colors-white-30, rgba(255, 255, 255, 0.30));
+                                            font-feature-settings: 'clig' off, 'liga' off;
+                                            font-family: DINPro;
+                                            font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            line-height: 20px; /* 125% */
+                                            text-decoration: line-through !important; 
+                                            margin-bottom: 0;                                               
+                                                }
+                                                h6{
+
+                                                border-radius: 4px;
+                                                background: var(--colors-pink-base, #E961A0);
+                                                color: var(--colors-white-base, #FFF);
+                                                font-feature-settings: 'clig' off, 'liga' off;
+                                                font-family: DINPro;
+                                                font-size: 12px;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                line-height: 16px; /* 133.333% */
+                                                padding: 2.1px 4px;                            
+                                                text-decoration: none !important;                                                    
+                                                margin-left: 8px;
+                                                height: 18px;
+                                                margin-bottom: 0;                                               
+                                                    
+
+                                                }
+                                    }
+                                    h5{
+                                        color: var(--colors-white-base, #FFF);
+                                        font-feature-settings: 'clig' off, 'liga' off;
+                                        /* H4/Bold */
+                                        font-family: DINPro;
+                                        font-size: 25px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 30px; /* 120% */    
+                                        margin-bottom: 20px;
+                                    }
+                                    button{
+                                        border-radius: 1000px;
+                                        background: var(--colors-white-base, #FFF);
+                                        
+                                        /* ! */
+                                        box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05);
+                                        padding: 14px 30px 16px 30px;
+                                        border: none;
+                                        width: 100%;
+                                       
+                                        a{
+                                            color: var(--colors-black-base, #000);
+                                            font-feature-settings: 'clig' off, 'liga' off;
+                                            font-family: DINPro;
+                                            font-size: 18px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: 20px; /* 111.111% */ 
+                                                                                       
+                                        }                                        
+                                    }
+                                }
+                            }                            
+                        }
+                    }
+                }
+            }
+        }
+        main{
+            background: white;
+            .container{
+                margin-inline: 79px;
+                padding-inline: 0;
+                margin-block: 60px;
+                @media (min-width: 0px) and (max-width: 360px){
+                    // display: flex;
+                    // flex-direction: column;
+                }
+                @media (min-width: 361px) and (max-width: 576px){
+                                margin-inline: 21px;
+                }
+                .row{
+                    @media (min-width: 0px) and (max-width: 360px){
+                        display: flex;
+                        flex-direction: column;
+                        width: 360px;
+                        // overflow-x: hidden;
+                    }
+                    @media (min-width: 361px) and (max-width: 576px){
+                    //  display: flex !important;           
+                    //  flex-direction: column !important;
+                    //  flex-wrap: wrap;
+                    //  width: 360px;
+                    }
+                   
+                    .col-3{
+                        @media (min-width: 0px) and (max-width: 360px){
+                            // display: flex;
+                        }
+                        @media (min-width: 361px) and (max-width: 576px){
+                            // display: flex;
+                            // flex-direction: column;
+                            // flex-wrap: wrap;
+                        }
+                        .card{
+                            @media (min-width: 361px) and (max-width: 576px){
+                                width: 520px !important;
+                                // display: flex;
+                                // flex-direction: column;
+                            }
+                            @media (min-width: 0px) and (max-width: 360px){
+                                width: 320px !important;
+                                // margin-bottom: 250px;
+                                margin-bottom: 30px;
+                                text-align: start;
+                            }
+                            border: none;
+                            position: relative;
+                            .card-body{
+                                @media (min-width: 0px) and (max-width: 360px){
+                                    padding: 0;
+                                }
+                                img{
+                                    @media (min-width: 361px) and (max-width: 576px){
+                                        width: 100%;
+                                    }
+                                    @media (min-width: 0px) and (max-width: 360px){
+                                        width: 100% !important;
+                                    }
+                                    width: 250px;
+                                    height: 220px;
+                                    border-radius: 20px;
+                                }
+                                p{
+                                    position: absolute;
+                                    padding: 7px 12px 9px 12px;
+                                    border-radius: 30px;
+                                    background: rgba(0, 0, 0, 0.50);
+                                    backdrop-filter: blur(40px);                                    
+                                    margin-top: -50px;
+                                    margin-left: 10px;
+                                    color: #FFF;
+                                    font-feature-settings: 'clig' off, 'liga' off;
+                                    font-family: DINPro;
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 20px; /* 166.667% */
+                                    letter-spacing: 1px;
+                                    text-transform: uppercase;                                    
+                                }
+                            }
+                            .card-footer{
+                                background: transparent;
+                                border: none;
+                                @media (min-width: 0px) and (max-width: 360px){
+                                    padding-left: 0;
+                                }
+                                h5{
+                                    @media (min-width: 361px) and (max-width: 576px){
+                                        font-size: 28px;
+                                        font-weight: 700;
+                                        width: 460px;
+                                    }
+                                    margin-bottom: 10px;
+                                    color: #000;
+                                    font-feature-settings: 'clig' off, 'liga' off;
+                                    
+                                    /* H5/Medium */
+                                    font-family: DINPro;
+                                    font-size: 22px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: 30px; /* 136.364% */                                    
+                                    width: 250px;
+                                }
+                                h6{
+                                    @media (min-width: 361px) and (max-width: 576px){
+                                        font-size: 20px;
+                                        font-weight: 500;
+                                        
+                                    }
+                                    color: #000;
+                                    font-feature-settings: 'clig' off, 'liga' off;
+                                    /* t1/Regular */
+                                    font-family: DINPro;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px; /* 133.333% */
+                                    opacity: 0.4000000059604645;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                    .col-9{
+                        @media (min-width: 0px) and (max-width: 360px){
+                            // width: 320px;
+                        }
+                         @media (min-width: 361px) and (max-width: 576px){
+                            margin: 0 auto;
+                        }
+                    }
+                    .uk-inline{
+                        @media (min-width: 0px) and (max-width: 360px){
+                            // width: 320px;
+                            padding-bottom: 40px;
+                        }
+                        width: 853px;
+                        padding: 0;
+                        margin-top: 40px;
+                        margin-bottom: 169px;
+                        button{
+                            @media (min-width: 0px) and (max-width: 360px){
+                                width: 320px;
+                            }
+                            padding: 14px 30px 16px 30px;
+                            border-radius: 1000px;
+                            border: 1px solid var(--colors-black-10, rgba(0, 0, 0, 0.10));  
+                            width: 100%;
+                            color: var(--colors-black-base, #000);
+                            font-feature-settings: 'clig' off, 'liga' off;
+                            font-family: DINPro;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 200;
+                            line-height: 20px; /* 125% */
+                            text-transform: inherit;                            
+                            &:hover{
+                                background: black;
+                                color: whitesmoke;
+                                transition: 450ms;
+                            }
+                        }
+                        .uk-open{
+                            background: #FFF2DC;
+                            border-radius: 20px;
+                            color: #7645EF;
+                            font-family: DINPro;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;  
+                            line-height: 22px;                          
+                        }
+                    }
+                    // img{
+                    //     background: #000;
+                    //     border-radius: 50%;
+                    //     &:hover{
+                    //         background: #00BEFF;
+                    //         transition: 700ms;
+                    //     }
+                    // }
+                      
+                      
+                      .swiper {
+                        width: 100%;
+                        height: 100%;
+                        
+                      }
+                      
+                      .swiper-slide {
+                        @media (min-width: 361px) and (max-width: 576px){
+                         flex-direction: column;       
+                        }
+                        font-size: 18px;
+                        background: #fff;
+                      
+                        /* Center slide text vertically */
+                        display: flex;
+                        justify-content: start;
+                        align-items: start;
+                        
+                      }
+
+                      .swiper-slide-active{
+                          @media (min-width: 0px) and (max-width: 360px){
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                        }
+                      }
+                      
+                      .swiper-slide img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        
+                      }
+                      
+                      .swiper-pagination-bullet {
+                        width: 40px;
+                        height: 40px;
+                        text-align: center;
+                        line-height: 20px;
+                        color: var(--10-black, #000);
+                        text-align: center;
+                        /* T/16 20 (old 18) */
+                        font-family: DINPro;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px; /* 125% */
+                        opacity: 1;
+                        background: transparent;
+                        padding-top: 10px;
+                        margin-inline: 0;
+                      }
+                      
+                      .swiper-pagination-bullet-active {
+                        color: var(--white, #FFF);
+                        text-align: center;
+                        /* T/16 20 (old 18) */
+                        font-family: DINPro;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px; /* 125% */
+                        background: #000; 
+                      }
+                      .swiper-slide-prev{
+                        @media (min-width: 0px) and (max-width: 360px){
+                                width: 359px !important;
+                        }
+                      }
+                      .swiper-pagination{
+                        @media (min-width: 0px) and (max-width: 360px){
+                            margin-left: 0px;
+                        }
+                        @media (min-width: 361px) and (max-width: 576px){
+                         margin-left: -20px;       
+                        }
+                        margin-left: -120px;
+                        margin-bottom: 60px;
+                      }
+                    
+                    
+                    
+                   
+                }
+            }
+        }
+    }
+}
